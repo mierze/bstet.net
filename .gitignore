@@ -1,3 +1,24 @@
-dist/
-zig-out/
+build/
 .zig-cache/
+.DS_Store
+/**/*.DS_Store
+**/**/node_modules
+src/**/node_modules
+src/**/logs
+src/**/*.log
+src/**/npm-debug.log*
+src/**/yarn-debug.log*
+src/**/yarn-error.log*
+src/**/pnpm-debug.log*
+src/**/lerna-debug.log*
+src/**/dist
+src/**/dist-ssr
+src/**/*.local
+src/**/# Editor directories and files
+src/**/!.vscode/extensions.json
+src/**/.idea
+src/**/*.suo
+src/**/*.ntvs*
+src/**/*.njsproj
+src/**/*.sln
+src/**/*.sw?
