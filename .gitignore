@@ -1,6 +1,8 @@
 build/
 .zig-cache/
 .DS_Store
+bb/**
+bb/
 /**/*.DS_Store
 /**/*.JPEG
 /**/*.JPG
