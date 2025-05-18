@@ -96,7 +96,11 @@ const App = () => {
                 <div className="flex items-center absolute inset-0 bg-amber-950/34">
                     <h2>A Look at the Week</h2>
                     <h3>Wednesday</h3>
-                    <p>Dinner with the families</p>
+                    <label>630pm:</label>
+                    <p>DOCKWEILER</p>
+                    <h3>Thursday</h3>
+                    <label>630pm</label>
+                    <p>Rehearsal Dinner at La Venta</p>
                     <h2>Weather</h2>
                     <p>It's always sunny</p>
                     <p>Be prepared for highs in the 80s and lows in the feels like 40s</p>
@@ -114,7 +118,7 @@ const App = () => {
                     <h3>What to prepare for?</h3>
                     <ul>
                         <li>Classy not Hippy 1960s</li>
-                        <li>Old Hollywood, Lana del Rey Cali Vibes</li>
+                        <li>Old Hollywood, Lana del Rey, Cali Vibes</li>
                         <li>No children at wedding or reception</li>
                     </ul>
                     <h3>Gifts:</h3>

@@ -2,6 +2,8 @@ build/
 .zig-cache/
 .DS_Store
 /**/*.DS_Store
+/**/*.JPEG
+/**/*.JPG
 **/**/node_modules
 src/**/node_modules
 src/**/logs

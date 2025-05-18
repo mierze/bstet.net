@@ -15,7 +15,7 @@ fn on_request(r: zap.Request) !void {
 
 pub fn main() !void {
     var listener = zap.HttpListener.init(.{
-        .port = 3000,
+        .port = 80,
         .on_upgrade = on_upgrade,
         .on_request = on_request,
         .max_clients = 1000,
@@ -25,7 +25,7 @@ pub fn main() !void {
     });
     try listener.listen();
 
-    std.debug.print("Listening on 0.0.0.0:3000\n", .{});
+    std.debug.print("Listening on 0.0.0.0:80\n", .{});
     var gpa = std.heap.GeneralPurposeAllocator(.{
         .thread_safe = true,
     }){};
@@ -35,10 +35,6 @@ pub fn main() !void {
     defer GlobalContextManager.deinit();
 
     // setup listener
-
-    std.log.info("", .{});
-    std.log.info("Connect with browser to http://localhost:3010.", .{});
-    std.log.info("Connect to websocket on ws://localhost:3010.", .{});
     std.log.info("Terminate with CTRL+C", .{});
 
     // start worker threads
