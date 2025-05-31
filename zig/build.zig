@@ -4,7 +4,7 @@ const std = @import("std");
 // declaratively construct a build graph that will be executed by an external
 // runner.
 pub fn build(b: *std.Build) void {
-    b.install_prefix = "build";
+    b.install_prefix = "";
     // Standard target options allows the person running `zig build` to choose
     // what target to build for. Here we do not override the defaults, which
     // means any target is allowed, and the default is native. Other options
@@ -29,6 +29,12 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    // Add a custom step to run the Vite build
+    const vite_build = b.addSystemCommand(&[_][]const u8{ "sh", "-c", "cd src/love && vite build --minify --out-dir ../../bb/dist && cd ../.." });
+    vite_build.step.name = "vite";
+
+    // Optionally, make the default install depend on vite_build
+    b.getInstallStep().dependOn(&vite_build.step);
     // We will also create a module for our other entry point, 'main.zig'.
     const exe_mod = b.createModule(.{
         // `root_source_file` is the Zig "entry point" of the module. If a module

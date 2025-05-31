@@ -9,6 +9,34 @@ const zap = @import("zap");
 const WebSockets = zap.WebSockets;
 
 fn on_request(r: zap.Request) !void {
+    if (r.path) |path| {
+        if (std.mem.startsWith(u8, path, "/wedding")) {
+            var file_path_buf: [std.fs.max_path_bytes]u8 = undefined;
+
+            const file_path = blk: {
+                if (std.mem.eql(u8, path, "/wedding") or std.mem.eql(u8, path, "/wedding/")) {
+                    break :blk "./dist/index.html";
+                } else {
+                    const subpath = path["/wedding".len..];
+                    if (subpath.len == 0 or std.mem.eql(u8, subpath, "/")) {
+                        break :blk "./dist/index.html";
+                    }
+                    const n = try std.fmt.bufPrint(&file_path_buf, "./dist{s}", .{subpath});
+                    break :blk n;
+                }
+            };
+
+            if (r.sendFile(file_path)) |_| {
+                return;
+            } else |_| {
+                // fall through to 404
+            }
+            r.setStatus(.not_found);
+            r.sendBody("<html><body><h1>404 - File not found</h1></body></html>") catch return;
+            return;
+        }
+    }
+
     r.setStatus(.not_found);
     r.sendBody("<html><body><h1>404 - File not found</h1></body></html>") catch return;
 }
@@ -19,8 +47,7 @@ pub fn main() !void {
         .on_upgrade = on_upgrade,
         .on_request = on_request,
         .max_clients = 1000,
-        .max_body_size = 1 * 1024,
-        .public_folder = "../../dist",
+        .max_body_size = 1 * 4096,
         .log = true,
     });
     try listener.listen();

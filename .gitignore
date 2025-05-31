@@ -1,9 +1,9 @@
-build/
+_build/
+*/.tgz
 .zig-cache/
 .DS_Store
-bb/**
-bb/
 /**/*.DS_Store
+k.tgz
 /**/*.JPEG
 /**/*.JPG
 **/**/node_modules
@@ -16,6 +16,7 @@ src/**/yarn-error.log*
 src/**/pnpm-debug.log*
 src/**/lerna-debug.log*
 src/**/dist
+_dist
 src/**/dist-ssr
 src/**/*.local
 src/**/# Editor directories and files
@@ -26,3 +27,4 @@ src/**/*.ntvs*
 src/**/*.njsproj
 src/**/*.sln
 src/**/*.sw?
+love/src/assets/*

@@ -1,0 +1,125 @@
+MY ONLY LOVE ROXY MUSIC
+wedding playlist
+
+** TODO **
+[ ] onboarding working great functionally
+[ ] ui makes sense for rsvp
+[ ] summary receipt page clean with data
+[ ] grab an orange color from boop or the card
+[ ] scrollbars
+[ ] TODO:sniff_it ++ make it like emojis but not emojis checking out with there options labeled clearly with color maybe or jomez style
+[ ] choose new fonts
+    - have fonts preloaded
+[ ] music
+    - first page california dreaming
+    - last page do stevie nicks
+    - maybe every page do something different
+    - maybe opt in / loading bar for it
+    -- maybe record player on screen or dials of 60s one
+[ ] play more with animation of photo like blurr biggering it 
+[ ] medium size images on phones?
+[ ] FAQ reads like old 60s newspaper
+    - could experiment with black and white 
+    - but more likely just a lighter blode opacity backdrop and dark font?
+[ ] bring in a map of the area
+[ ] countdown
+[ ] guestbook functional / message to host/ could be an add on or 2 options
+[ ] any other pages?
+[ ] push to git
+
+*** [ ] TUXEDO! ***   
+*** [ ] RINGS!  *** 
+*** [ ] VDGPHR! *** 
+
+[ ] look ahead clean and proper
+    - title left behind me looking right to the content
+🔥 Tuesday, August 26 — Kickoff Bonfire at Dockweiler Beach
+Time: 5:00 PM
+Location: Dockweiler State Beach – Fire Pits Area
+📍 12000 Vista Del Mar, Playa Del Rey, CA 90293
+
+Let’s kick off wedding week with toes in the sand and drinks by the fire! We’ll be grilling out, hanging under the stars, and enjoying a relaxed evening with everyone as they arrive in town.
+
+What to bring: A jacket and/or blanket (it gets chilly by the ocean!), something to sit on (like a towel or beach chair), and your favorite drink or grillable snack—we’ll have the essentials ready to go!
+🍽️ Wednesday, August 27 — Rehearsal + Group Dinner
+Time: Evening (TBA)
+Location: TBA
+We likely won’t be able to confirm our official rehearsal time until 30 days before the wedding, but regardless—we’ll be hosting a casual dinner that evening open to all guests who are in town. Join us for a relaxed meal, great conversation, and a little pre-wedding toast or two.
+💍 Thursday, August 28 — The Wedding Day!
+Time:
+
+Ceremony: 5:30 PM (Outdoors)
+
+Reception: Immediately following (Indoors)
+Location: La Venta Inn
+📍 796 Vía Del Monte, Palos Verdes Estates, CA 90274
+
+Join us for a heartfelt ceremony overlooking the Pacific Ocean, followed by dinner, drinks, and dancing inside this historic California estate.
+
+Dress Code: Semi-formal to formal
+The ceremony will be held outdoors—please dress accordingly and consider a light jacket or wrap for the evening breeze. Free parking is available onsite.
+
+🎬 Friday, August 29 — Hollywood & Beverly Hills Day
+Time: Meet-up details coming soon
+Explore the glam and grit of LA with a day of sightseeing! We’ll stroll through Hollywood, see the Walk of Fame, hit Rodeo Drive, and take in iconic LA views.
+Wear comfy shoes and bring your camera—touristy vibes encouraged!
+
+🌴 Saturday, August 30 — Beach Day: Santa Monica & Venice
+Time: 11:00 AM – 4:00 PM
+Soak up the last weekend of summer with a classic LA beach day! We'll start in Santa Monica and wander down to Venice for people-watching, shopping, skating, and snacks.
+Swimsuits, towels, and sunscreen recommended.
+
+
+[ ] faq clean and proper
+//                         **Can I bring a plus one?**
+//                         We’re keeping our wedding celebration intimate and are only able to accommodate those listed on the invitation. Thank you for understanding—we truly want to share this day with the people we know and love.
+//
+//                         **Are kids welcome?**
+//                         While we adore your little ones, we kindly ask that you leave them at home for the evening. We hope you enjoy a relaxing night out celebrating with us!
+//
+//                         **Where is the ceremony taking place?**
+//                         The ceremony will be held outdoors at our venue in beautiful Palos Verdes Estates. Please be mindful of the weather—it can be warm or breezy near the coast, so consider dressing in layers.
+//
+//                         **Where is the reception?**
+//                         The reception will take place at the same venue, immediately following the ceremony. No need to travel—we’ll go straight from “I do” to the celebration!
+//
+//                         **Will there be transportation provided?**
+//                         There will not be a shuttle service. However, free parking is available at the ceremony venue. We recommend carpooling or using a rideshare service if you prefer not to drive.
+//
+//                         **What is the dress code?**
+//                         The dress code is **semi-formal to formal**. Think suits or dress shirts and slacks, cocktail dresses, or floor-length gowns—whatever makes you feel your best while honoring the occasion. Since the ceremony is outdoors, we suggest dressing in layers and choosing shoes that are comfortable for grass or uneven terrain.
+
+```***~~::::__content__::::~~***```
+page0
+    CALIFORNIA DREAMING
+    the wedding of
+    BRETT & Kaitlyn
+    August 28th 2025
+page1
+page2
+page3
+page4
+page5
+page6
+page7
+page8
+page9
+
+[ ] code cleanliness guide
+    1   prototype with tailwind in html
+    2   results move to css applys
+    3   if no more css needed they stay, else css replaces it
+    4   moves up a level in css classes
+
+keys
+9 - k looking right cute
+11 - us looking out left
+12 - us looking at eachother
+15 - k close up hand chin
+16 - looking out brett
+18 - noone, cam of left darker
+21 - k looking at camera faded
+22 - k sniffing flowers
+24 - k in flowers looking at cam
+xa - flare
+

@@ -1,0 +1,117 @@
+@import "tw-animate-css";
+@import "tailwindcss";
+
+
+body {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+:root {
+    --pink-half: rgba(161, 128, 128, .5);
+    --pink-full: rgba(161, 128, 128, 1);
+    --darkgreen-half: rgba(56, 60, 53, .5);
+    --darkgreen-full: rgba(56, 60, 53, 1);
+    --green-half: rgba(131, 135, 108, .5);
+    --green-full: rgba(131, 135, 108, 1);
+    --lightblonde-full: rgba(241, 233, 224, 1);
+    --lightblonde-half: rgba(241, 233, 224, .5);
+    --blonde-full: rgba(184, 180, 173, 1);
+    --blonde-half: rgba(184, 180, 173, .5);
+    --darkblue-full: rgba(56, 77, 123, 1);
+    --darkblue-half: rgba(56, 77, 123, .5);
+    --lavender-half: hsla(255, 22%, 77%, .4);
+    --lavender-full: hsla(255, 22%, 77%, 1);
+
+    --brown-full: rgba(89, 84, 80, 1);
+    --yellow-full: rgba(191, 167, 79, 1);
+    --yellow-half: rgba(191, 167, 79, .5);
+    --brown-half: rgba(89, 84, 80, .5);
+    --blue-half: rgba(107, 145, 214, .5);
+    --blue-full: rgba(107, 145, 214, .5);
+    --lightblue-half: rgba(198, 194, 216, .5);
+    --lightblue-full: rgba(198, 194, 216, 1);
+
+
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    @apply text-shadow-[var(--blue-full)];
+    color: var(--lightblonde-full);
+} 
+
+label, p, span, li, caption { 
+    color: var(--blonde-full) !important;
+} 
+
+h1 {
+    @apply text-6xl sm:text-6xl lg:text-8xl xl:text-9xl;
+}
+
+h2 {
+    @apply text-5xl sm:text-5xl md:text-6xl lg:text-7xl;
+}
+
+h3 {
+    @apply text-3xl sm:text-3xl md:text-4xl;
+}
+
+h4 {
+    @apply text-2xl sm:text-2xl md:text-3xl;
+}
+
+button { 
+    color: var(--blonde-full);
+    font-weight: bold;
+    z-index: 9;
+
+    &:hover {
+        color: var(--lightblonde-full);
+    }
+}
+input, button {
+    @apply px-4 py-2 rounded-md hover:cursor-pointer;
+}
+
+input, select, textarea {
+  font-size: 16px;
+  color: var(--blonde-full);
+  ::placeholder {
+    color: var(--brown-full);
+  }
+}
+main {
+    @apply h-screen flex-col;
+
+    .backsplash {
+        @apply flex items-center absolute inset-0 h-screen;
+        background-color: var(--pink-half) !important;
+        overflow: scroll;
+    }
+
+    footer { 
+        
+    }
+
+    section {
+        @apply min-h-screen bg-cover bg-center flex-wrap font-bold p-8 pb-24;
+        background-size: 109%;
+        @apply lg:p-32;
+        position: relative; 
+    }
+
+    .text-highlight {
+        color: var(--yellow-full) !important;
+    }
+}
+
