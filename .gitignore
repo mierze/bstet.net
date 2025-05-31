@@ -2,6 +2,7 @@ _build/
 */.tgz
 .zig-cache/
 .DS_Store
+_data/*
 /**/*.DS_Store
 *.txt
 k.tgz
