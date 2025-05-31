@@ -3,6 +3,7 @@ _build/
 .zig-cache/
 .DS_Store
 /**/*.DS_Store
+*.txt
 k.tgz
 /**/*.JPEG
 /**/*.JPG
