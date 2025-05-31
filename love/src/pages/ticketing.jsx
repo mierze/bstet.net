@@ -1,6 +1,4 @@
 import BGImage from "../components/bg-image";
-// import large from "../assets/21.jpeg";
-// import small from "../assets/21s.jpeg";
 import large from "../assets/24.jpeg";
 import small from "../assets/24s.jpeg";
 import largeMobile from "../assets/22.jpeg";
@@ -9,7 +7,7 @@ import DataForm from "../components/data-form";
 // import Drawer from "../components/drawer";
 import { useState, useEffect } from "react";
 
-function useIsPortrait() {
+const useIsPortrait = () => {
     const [isPortrait, setIsPortrait] = useState(
         typeof window !== "undefined"
             ? window.matchMedia("(orientation: portrait)").matches

@@ -159,28 +159,6 @@ const App = () => {
         );
     }
 
-    const Fiiooter = () => (
-        <footer className="max-w-4xl fixed bottom-0 mx-auto left-0 right-0 h-auto flex items-center space-x-4 px-8 z-30 mt-auto flex flex-col items-center space-y-3 p-4 sm:px-8">
-            <div className="flex justify-center items-center w-full max-w-md space-x-3">
-                {Array.from({ length: View._num_views }).map((_, i) => (
-                    <div
-                        onClick={() => goto(i)}
-                        key={i}
-                        className={`
-                        flex-1 h-6 rounded-full cursor-pointer transition-all duration-300 border border-[var(--blonde-half)]
-                        ${i < view
-                                ? "bg-[var(--blue-full)]/70"
-                                : i === view
-                                    ? "bg-[var(--green-full)]/90 shadow-lg"
-                                    : "bg-[var(--blonde-full)]/20 hover:bg-[var(--blonde-full)]/30"
-                            }
-                    `}
-                    />
-                ))}
-            </div>
-        </footer>
-    );
-
     const CurrentView = () => {
         switch (view) {
             case View.Splash:
