@@ -1,7 +1,11 @@
-call me crazy
+#### bstet.net/wedding 
 
-react client with shadcn / tailwindcss -- uses radix within shad
+## architecture
+- react client experimenting with some tailwind
+- subbed in golang for zig for webserver maturity
 
-zig server leveraging c underneath, equipped with websockets http rest endpoints / serve statics 
+## photos
+- photos on this site are taken on my dads 1970 canon f1 35mm
 
-now go cause i suck
+# m1erzem4de onefour
+
