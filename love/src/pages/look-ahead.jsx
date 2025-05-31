@@ -12,7 +12,7 @@ const LookAhead = () => (
             <h2 className="ml-4 mb-8">A look at the week</h2>
             <aside className="p-4 bg-[var(--brown-half)] rounded-lg flex flex-col gap-4 md:flex-wrap">
                 <fieldset className="w-1/2 space-y-3">
-                    <h3 className="font-semibold">Tuesday - August 26 - 5pm</h3>
+                    <h3 className="font-semibold">ttTuesday - August 26 - 5pm</h3>
                     <ul className="space-y-2">
                         <li>
                             <p className="mb-2">Dockweiler State Beach</p>

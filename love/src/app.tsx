@@ -52,7 +52,8 @@ const App = () => {
                 const parsed = JSON.parse(saved);
                 setGuest(parsed);
                 if (parsed.id) {
-                    fetch(`/api/store?id=${parsed.id}`)
+                    fetch(`http://localhost:4000/api/store?id=${parsed.id}`)
+                        // fetch(`/api/store?id=${parsed.id}`)
                         .then(res => res.json())
                         .then(setStoreData)
                         .catch(err => {

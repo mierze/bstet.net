@@ -53,7 +53,8 @@ const Ticketing = ({ setGuest }) => {
             return;
         }
         e.preventDefault();
-        fetch(`/api/guests?name=${name}&zip=${zip}`, {
+        // fetch(`/api/guests?name=${name}&zip=${zip}`, {
+        fetch(`http://localhost:4000/api/guests?name=${name}&zip=${zip}`, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
         })

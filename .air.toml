@@ -1,0 +1,16 @@
+[build]
+  cmd = "go build -o _build/bin"
+  bin = "./_build/bin"
+  include_ext = ["go", "html", "css", "js", "json"]
+  exclude_dir = ["vendor", "node_modules"]
+  exclude_ext = []
+[exec]
+  cmd = "./_build/bin"
+
+[log]
+  time = true
+[watch]
+  include_dir = ["./", "./_build/"]
+  include_ext = ["go", "html", "css", "js", "json"]
+  exclude_dir = ["vendor", "node_modules"]
+
